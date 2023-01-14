@@ -4,10 +4,25 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import {AuthContextProvider} from './context/AuthContext';
+import { ExercicesContextProvider } from './context/ExercicesContext';
+
+import { GoogleOAuthProvider } from '@react-oauth/google';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
   <React.StrictMode>
-    <App />
+    
+    <GoogleOAuthProvider clientId="461812386512-85eqc31u4pebf8ejvovh31m5338fr8nk.apps.googleusercontent.com">
+
+      <AuthContextProvider>
+        <ExercicesContextProvider>
+          <App />
+        </ExercicesContextProvider>
+      </AuthContextProvider>
+      
+    </GoogleOAuthProvider>
   </React.StrictMode>
 );
 

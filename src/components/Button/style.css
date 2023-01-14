@@ -1,0 +1,38 @@
+.btn{
+  text-align: center;
+  font-size: 22px;
+  color: #ffffff;
+  width: 335px;
+  height: 75px;
+  border-radius: 12px;
+  border: none;
+  transition: 'all 0.2s ease-in-out';
+  cursor: pointer;
+}
+
+/* btn default */
+.default{
+  background-color: #37A0DB;
+}
+
+.default:hover{
+  background-color: #3780ff;
+}
+
+/* btn to google */
+.google{
+  background-color: #DB4437;
+}
+
+.google:hover{
+  background-color: #A04437;
+}
+
+/* btn to cancel */
+.cancel{
+  background-color: #f11447;
+}
+
+.cancel:hover{
+  background-color: #b11447;
+}
