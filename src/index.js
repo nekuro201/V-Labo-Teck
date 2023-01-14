@@ -14,7 +14,7 @@ root.render(
 
   <React.StrictMode>
     
-    <GoogleOAuthProvider clientId="461812386512-85eqc31u4pebf8ejvovh31m5338fr8nk.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId={"process.env.GOOGLE_CLIENT_ID"}>
 
       <AuthContextProvider>
         <ExercicesContextProvider>

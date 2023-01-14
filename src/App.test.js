@@ -8,7 +8,7 @@ test('button LOGIN should be in the document', () => {
   const isLogged = false;
 
   render(
-    <GoogleOAuthProvider clientId="461812386512-85eqc31u4pebf8ejvovh31m5338fr8nk.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId={"process.env.GOOGLE_CLIENT_ID"}>
       <AuthContext.Provider value={{isLogged}}>
         <App />
       </AuthContext.Provider>
